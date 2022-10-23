@@ -27,6 +27,16 @@ set ttyfast                 " Speed up scrolling in Vim
 "
 call plug#begin()
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'mipmip/vim-petra'
+Plug 'morhetz/gruvbox'
 Plug 'dracula/vim'
 call plug#end()
-colorscheme dracula 
+colorscheme gruvbox 
+
+map  ,1 :w<CR> \| :!python '%' <CR>
+
+
+" Learn VIM hard way
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
